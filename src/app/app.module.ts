@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WordFrequencyAnalyzerModule } from './word-frequency-analyzer/word-frequency-analyzer.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    WordFrequencyAnalyzerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

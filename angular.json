@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "counting-words"
+  "defaultProject": "counting-words",
+  "cli": {
+    "analytics": "30efefd9-b5c1-4eba-ae1e-29ae4ba91a9c"
+  }
 }

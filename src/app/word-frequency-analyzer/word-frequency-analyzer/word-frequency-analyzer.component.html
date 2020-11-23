@@ -1,0 +1,27 @@
+<form>
+  <section id="text-input">
+    <label>Text:</label>
+    <textarea name="text" [(ngModel)]="text" placeholder="Type your text here."></textarea>
+  </section>
+
+  <section id="highest-frequency">
+    <label>Highest Frequency:</label>{{ this.highestFrequency }}
+  </section>
+
+  <section id="frequency-for-word">
+    <label>Frequency for <input name="word" [(ngModel)]="word" placeholder="word">:</label>{{ this.frequencyForWord }}
+  </section>
+
+  <section id="most-frequent-n-word">
+    <label>Most Frequent <input placeholder="N" type="number" name="n" [(ngModel)]="n"> Word:</label>
+    <span *ngIf="mostFrequentNWord">
+      <ng-container *ngFor="let wordFrequency of mostFrequentNWord; let i = index">
+        {{ wordFrequency.getWord() }}:{{ wordFrequency.getFrequency() }}<ng-container *ngIf="i < this.mostFrequentNWord.length - 1">, </ng-container>
+      </ng-container>
+    </span>
+  </section>
+
+  <section id="calculate">
+    <button type="button" class="btn primary" (click)="calculate()">Calculate</button>
+  </section>
+</form>

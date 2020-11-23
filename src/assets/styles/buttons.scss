@@ -1,0 +1,31 @@
+@import '~src/assets/styles/variables';
+
+.btn {
+
+  cursor: pointer;
+
+  &.primary {
+    background-color: $brand-color;
+    line-height: 29px;
+    border: 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  &.primary:hover {
+    background-color: #d16909;
+  }
+
+  &.primary:focus {
+    background-color: #d16909;
+    outline: 0px;
+  }
+}
+
+.btn:active {
+  -webkit-transform: scale(.985,.985);
+  -ms-transform: scale(.985,.985);
+  -o-transform: scale(.985,.985);
+  transform: scale(.985,.985);
+}

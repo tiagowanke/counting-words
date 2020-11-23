@@ -1,0 +1,20 @@
+@import "~src/assets/styles/variables";
+
+section.header {
+  justify-content: center;
+  background-color: $brand-color;
+  height: 80px;
+  display: flex;
+
+  h1 {
+    color: white;
+
+  }
+}
+
+section.content {
+  padding: 10px 10%;
+  max-width: 550px;
+  margin: auto;
+}
+

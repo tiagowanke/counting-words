@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~src/assets/styles/variables";
+@import "~src/assets/styles/buttons";
+
+body {
+  margin: 0px;
+  font-size: $brand-font-size;
+  font-family: $brand-font;
+  line-height: $brand-line-height;
+  min-width: 300px;
+  color: $brand-font-color;
+}
