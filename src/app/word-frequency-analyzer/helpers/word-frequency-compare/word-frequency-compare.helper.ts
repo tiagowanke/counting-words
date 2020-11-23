@@ -1,4 +1,4 @@
-import {WordFrequency} from '../../model/word-frequency.model';
+import { WordFrequency } from '../../model/word-frequency.model';
 
 export class WordFrequencyCompareHelper {
 

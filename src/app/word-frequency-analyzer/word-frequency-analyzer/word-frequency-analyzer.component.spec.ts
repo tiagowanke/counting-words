@@ -5,7 +5,9 @@ import { WordFrequencyAnalyzerService } from '../word-frequency-analyzer.service
 
 import { WordFrequencyAnalyzerComponent } from './word-frequency-analyzer.component';
 import createSpyObj = jasmine.createSpyObj;
+// eslint-disable-next-line id-blacklist
 import any = jasmine.any;
+
 
 describe('WordFrequencyAnalyzerComponent', () => {
   let component: WordFrequencyAnalyzerComponent;
