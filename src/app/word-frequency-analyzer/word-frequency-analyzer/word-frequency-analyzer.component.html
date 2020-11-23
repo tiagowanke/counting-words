@@ -14,11 +14,7 @@
 
   <section id="most-frequent-n-word">
     <label>Most Frequent <input placeholder="N" type="number" name="n" [(ngModel)]="n"> Word:</label>
-    <span *ngIf="mostFrequentNWord">
-      <ng-container *ngFor="let wordFrequency of mostFrequentNWord; let i = index">
-        {{ wordFrequency.getWord() }}:{{ wordFrequency.getFrequency() }}<ng-container *ngIf="i < this.mostFrequentNWord.length - 1">, </ng-container>
-      </ng-container>
-    </span>
+    <span *ngIf="mostFrequentNWord">{{ mostFrequentNWord | wordFrequencies }}</span>
   </section>
 
   <section id="calculate">
